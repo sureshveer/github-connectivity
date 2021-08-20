@@ -14,6 +14,7 @@ public class AccountSearchPage {
         If(mode=='Detail' || mode=='Edit'){                                    
             editmode=mode=='edit'?true:false;
             detailmode=mode=='detail'?true:false;
+            system.System.debug('ssssssss');
             Searchmode=false;
             ac=[select id,name,phone,AccountSource,AnnualRevenue,BillingAddress,Rating from account where id=:accid];          
         }else{
